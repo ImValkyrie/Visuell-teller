@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <button onclick="setNum(17)">Set Number to 17</button>
+    <button onclick="setNum(38)">Set Number to 38</button>
+    <br><br>
+    <button onclick="increaseNum()">Increase number by one</button>
+    <button onclick="decreaseNum()">Decrease number by one</button>
+
+<script>
+
+    //var number =5; //int
+    //var floatnumber = 5.5; //kommaseparert tall
+    //var text = "en liten tekstbit"; //string
+    //var enkeltTegn ='a'; //char
+    //var booleans = true; //boolenas
+
+    var outputDiv = document.getElementById('output');
+    var numToShow = 0;
+
+    function setNum(selectedNum){
+        numToShow = selectedNum;
+        outputDiv.innerHTML = numToShow;
+    }
+
+    function increaseNum(){
+        numToShow++;
+        //numToShow = numToShow + 1
+        outputDiv.innerHTML = numToShow;
+    }
+
+   function decreaseNum(){
+        numToShow--;
+        //numToShow = numToShow -1
+        outputDiv.innerHTML = numToShow;
+   }
+    
+
+</script>
+    
+</body>
+</html>
